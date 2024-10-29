@@ -11,6 +11,13 @@ This repository allows people to use apriltag code for positioning and automatic
 | REALSENSE DEPTH  CAMERA D435   | 深度相机    | D435   | realsense2_camera |
 | Esp32   | 底盘控制板    | ESP32-S3   | micro_ros_agent |
 
+## Install dependencies
+```bash
+cd ~/autodock_ros2_humble/
+rosdep update
+rosdep install --from-paths src --ignore-src -r -y --rosdistro humble
+```
+
 ## Build BT_ros2 with main workspace:
 
 ```bash

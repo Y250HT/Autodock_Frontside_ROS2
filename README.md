@@ -10,6 +10,22 @@ This repository allows people to use apriltag code for positioning and automatic
 |----------|--------------------|--------|------------|
 | REALSENSE DEPTH  CAMERA D435   | 深度相机    | D435   | realsense2_camera |
 | Esp32   | 底盘控制板    | ESP32-S3   | micro_ros_agent |
+
+## Use Physical Bot and RealSense D435
+
+Step 1. Turn on MicroRos in your robot chRassis.
+
+```bash
+ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888 -v6
+```
+
+Step 2. Launch RealSenseD435 in real world.
+
+```bash
+ros2 launch realsense2_camera rs_launch.py
+```
+
+
 ## Reference link
 https://github.com/micro-ROS/micro-ROS-Agent/tree/humble
 

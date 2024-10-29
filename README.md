@@ -5,8 +5,6 @@ This repository allows people to use apriltag code for positioning and automatic
   <img src="readme_source/readme1.gif" alt="说明文本">
 </p>
 
-![](readme_source/readme1.gif)
-
 ## Device requirement
 | 设备 | 描述               | 版本   | 依赖包     |
 |----------|--------------------|--------|------------|

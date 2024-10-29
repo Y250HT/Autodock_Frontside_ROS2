@@ -39,7 +39,18 @@ Step 3. Send request to start docking
 ros2 launch bt_ros2 bt_ros2.launch.py
 ```
 
+## BT configurations
 
+```xml
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <Sequence>
+      <AutodockClient action="start"/>
+      <AutodockClient action="cancel"/>
+    </Sequence>
+  <BehaviorTree>
+</root>
+```
 
 ## Reference link
 https://github.com/micro-ROS/micro-ROS-Agent/tree/humble

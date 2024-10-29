@@ -1,11 +1,3 @@
-#include "nav2_client.hpp"
-#include "interrupt_event.hpp"
-#include "snapshot_client.hpp"
-#include "teleop_event.hpp"
-#include "start_usb_cam.hpp"
-#include "publish_topic.hpp"
-#include "start_run_command.hpp"
-#include "wait_node.hpp"
 #ifdef SUPPORT_AUTODOCK
 #include "autodock_client.hpp"
 #endif
@@ -30,16 +22,6 @@ int main(int argc, char **argv)
     // We use the BehaviorTreeFactory to register our custom nodes
     BehaviorTreeFactory factory;
   
-    factory.registerNodeType<Nav2Client>("Nav2Client");
-    factory.registerNodeType<InterruptEvent>("InterruptEvent");
-    factory.registerNodeType<SnapshotClient>("SnapshotClient");
-    factory.registerNodeType<SendCommandVel>("SendCommandVel");
-    factory.registerNodeType<StartUsbCam>("StartUsbCam");
-    factory.registerNodeType<MakeRunCommand>("MakeRunCommand");
-    factory.registerNodeType<WaitNode>("WaitNode");
-    factory.registerNodeType<PublishTopic>("PublishTopic");
-
-    //factory.registerNodeType<StartUsbCam>("StartUsbCam");
 #ifdef SUPPORT_AUTODOCK
     factory.registerNodeType<AutodockClient>("AutodockClient");
 #endif    

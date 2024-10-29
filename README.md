@@ -11,6 +11,14 @@ This repository allows people to use apriltag code for positioning and automatic
 | REALSENSE DEPTH  CAMERA D435   | 深度相机    | D435   | realsense2_camera |
 | Esp32   | 底盘控制板    | ESP32-S3   | micro_ros_agent |
 
+## Build BT_ros2 with main workspace:
+
+```bash
+cd ~/autodock_ros2_humble/
+source /opt/ros/humble/setup.bash
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+```
+
 ## Use Physical Bot and RealSense D435
 
 Step 1. Turn on MicroRos in your robot chRassis.

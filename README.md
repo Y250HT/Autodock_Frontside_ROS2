@@ -25,6 +25,13 @@ Step 2. Launch RealSenseD435 in real world.
 ros2 launch realsense2_camera rs_launch.py
 ```
 
+Step 3. Send request to start docking
+
+```bash
+ros2 launch bt_ros2 bt_ros2.launch.py
+```
+
+
 
 ## Reference link
 https://github.com/micro-ROS/micro-ROS-Agent/tree/humble

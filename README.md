@@ -1,6 +1,8 @@
 # autodock_ros2_humble
 This repository allows people to use apriltag code for positioning and automatic adjustment of pose in ROS2 humble version, and it has been successfully tested in real cars, but there may be some cumbersome adjustment process, and parameters need to be adjusted to improve. In the project, we use the Behavior Tree to integrate our code, so that our project can first navigate, navigate to the target point, execute Apriltag code positioning, and then return to the second target point.
+
 ![](readme_source/readme1.gif)
+
 ## Device requirement
 | 设备 | 描述               | 版本   | 依赖包     |
 |----------|--------------------|--------|------------|

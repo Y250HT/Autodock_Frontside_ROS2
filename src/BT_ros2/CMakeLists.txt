@@ -23,8 +23,6 @@ find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(nav2_behavior_tree REQUIRED)
-find_package(nav2_msgs REQUIRED)
 find_package(behaviortree_cpp_v3 REQUIRED)
 
 if(BUILD_AUTODOCK STREQUAL "ON")
@@ -38,8 +36,6 @@ set(dependencies
   rclcpp_action
   std_msgs
   geometry_msgs
-  nav2_behavior_tree
-  nav2_msgs
   behaviortree_cpp_v3
   ${OTHER_DEPS}
 )  
@@ -56,10 +52,6 @@ if(BUILD_TESTING)
 endif()
 
 
-add_executable(send_goal 
-  src/send_goal
-)
-
 ament_target_dependencies(send_goal
 	${dependencies}
 )
@@ -73,7 +65,6 @@ ament_target_dependencies(bt_ros2
 )
 
 install (TARGETS
-  send_goal
   bt_ros2
   DESTINATION lib/${PROJECT_NAME}
 )

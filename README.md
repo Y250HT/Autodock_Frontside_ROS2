@@ -13,9 +13,9 @@ This repository allows people to use apriltag code for positioning and automatic
 
 ## Install dependencies
 ```bash
-cd ~/autodock_ros2_humble/
-rosdep update
-rosdep install --from-paths src --ignore-src -r -y --rosdistro humble
+$ cd ~/autodock_ros2_humble/
+$ rosdep update
+$ rosdep install --from-paths src --ignore-src -r -y --rosdistro humble
 ```
 
 ## Build BT_ros2 with main workspace:

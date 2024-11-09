@@ -21,6 +21,8 @@ rosdep install --from-paths src --ignore-src -r -y --rosdistro humble
 ## Build BT_ros2 with main workspace:
 
 ```bash
+git clone https://github.com/Y250HT/Behavior_Ros2.git
+sudo apt-get install ros-humble-realsense2*
 cd ~/autodock_ros2_humble/
 source /opt/ros/humble/setup.bash
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release

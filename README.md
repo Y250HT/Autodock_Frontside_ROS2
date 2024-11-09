@@ -21,11 +21,11 @@ $ rosdep install --from-paths src --ignore-src -r -y --rosdistro humble
 ## Build BT_ros2 with main workspace:
 
 ```bash
-git clone https://github.com/Y250HT/Behavior_Ros2.git
-sudo apt-get install ros-humble-realsense2*
-cd ~/autodock_ros2_humble/
-source /opt/ros/humble/setup.bash
-colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+$ git clone https://github.com/Y250HT/Behavior_Ros2.git
+$ sudo apt-get install ros-humble-realsense2*
+$ cd ~/autodock_ros2_humble/
+$ source /opt/ros/humble/setup.bash
+$ colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
 
 ## Use Physical Bot and RealSense D435
@@ -33,19 +33,19 @@ colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 Step 1. Turn on MicroRos in your robot chRassis.
 
 ```bash
-ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888 -v6
+$ ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888 -v6
 ```
 
 Step 2. Launch RealSenseD435 in real world.
 
 ```bash
-ros2 launch realsense2_camera rs_launch.py
+$ ros2 launch realsense2_camera rs_launch.py
 ```
 
 Step 3. Send request to start docking
 
 ```bash
-ros2 launch bt_ros2 bt_ros2.launch.py
+$ ros2 launch bt_ros2 bt_ros2.launch.py
 ```
 
 ## BT configurations

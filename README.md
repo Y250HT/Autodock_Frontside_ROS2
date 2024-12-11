@@ -16,6 +16,9 @@ This repository allows people to use apriltag code for positioning and automatic
 $ cd ~/autodock_ros2_humble/
 $ rosdep update
 $ rosdep install --from-paths src --ignore-src -r -y --rosdistro humble
+$ cd apriltag
+$ cmake -B build -DCMAKE_BUILD_TYPE=Release
+$ cmake --build build --target install
 ```
 
 ## Build BT_ros2 with main workspace:
